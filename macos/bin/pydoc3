@@ -1,0 +1,5 @@
+#!/private/var/tmp/_bazel_hrvolap/cbad7e6dac15bf07632f0b5b890ca227/external/python_interpreter/bazel_install/bin/python3.7
+
+import pydoc
+if __name__ == '__main__':
+    pydoc.cli()
