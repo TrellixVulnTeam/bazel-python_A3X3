@@ -10,5 +10,4 @@ print(cwd)
 if platform.system() == 'Darwin':
   subprocess.run([cwd + '/macos/bin/python3.7'] + sys.argv[1:], check=True)
 else:
-  os.environ['PYTHONHOME'] = cwd + '/linux'
-  os.execv(cwd + '/linux/bin/python3.7', sys.argv)
+  subprocess.run([cwd + '/linux/bin/python3.7'] + sys.argv[1:], check=True)
