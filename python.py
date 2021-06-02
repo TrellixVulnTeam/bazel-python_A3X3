@@ -2,17 +2,13 @@
 import platform
 import os
 import sys
+import subprocess
 
 cwd = '/'.join((__file__).split('/')[:-1])
 print(os.environ)
 print(cwd)
 if platform.system() == 'Darwin':
-  os.environ['PYTHONHOME'] = cwd + '/macos'
-  try:
-    os.environ.pop('PYTHONPATH')
-  except:
-    pass
-  os.execv(cwd + '/macos/bin/python3.7', sys.argv)
+  subprocess.run([cwd + '/macos/bin/python3.7'] + sys.argv[1:], check=True)
 else:
   os.environ['PYTHONHOME'] = cwd + '/linux'
   os.execv(cwd + '/linux/bin/python3.7', sys.argv)
