@@ -8,6 +8,10 @@ print(os.environ)
 print(cwd)
 if platform.system() == 'Darwin':
   os.environ['PYTHONHOME'] = cwd + '/macos'
+  try:
+    os.environ.pop('PYTHONPATH')
+  except:
+    pass
   os.execv(cwd + '/macos/bin/python3.7', sys.argv)
 else:
   os.environ['PYTHONHOME'] = cwd + '/linux'
