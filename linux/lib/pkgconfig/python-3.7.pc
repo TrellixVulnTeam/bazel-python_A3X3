@@ -1,5 +1,5 @@
 # See: man pkg-config
-prefix=/home/kasper/.cache/bazel/_bazel_kasper/18a98eb56e8ea9c35f50b5fc0685d62e/external/python_interpreter/bazel_install
+prefix=/root/Python-3.7.3/bazel_install
 exec_prefix=${prefix}
 libdir=${exec_prefix}/lib
 includedir=${prefix}/include

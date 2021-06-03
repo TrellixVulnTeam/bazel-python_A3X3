@@ -68,6 +68,7 @@
 # platform should be present.  The distribution comes with all modules
 # enabled that are supported by most platforms and don't require you
 # to ftp sources from elsewhere.
+*static*
 
 
 # Some special rules to define PYTHONPATH.

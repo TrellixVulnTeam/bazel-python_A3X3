@@ -1,4 +1,4 @@
-#!/home/kasper/.cache/bazel/_bazel_kasper/18a98eb56e8ea9c35f50b5fc0685d62e/external/python_interpreter/bazel_install/bin/python3.7m
+#!/root/Python-3.7.3/bazel_install/bin/python3.7m
 # -*- python -*-
 
 # Keep this script in sync with python-config.sh.in
